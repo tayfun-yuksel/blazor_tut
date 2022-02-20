@@ -2,7 +2,7 @@
 
 <PageTitle>Weather forecast</PageTitle>
 
-@using blazor_counter.Data
+@using blazor_tut.Data
 @inject WeatherForecastService ForecastService
 
 <h1>Weather forecast</h1>
@@ -16,16 +16,16 @@
 else
 {
     <table class="table">
-    <thead>
-        <tr>
-            <th>Date</th>
-            <th>Temp. (C)</th>
-            <th>Temp. (F)</th>
-            <th>Summary</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var forecast in forecasts)
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Temp. (C)</th>
+                <th>Temp. (F)</th>
+                <th>Summary</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var forecast in forecasts)
             {
                 <tr>
                     <td>@forecast.Date.ToShortDateString()</td>

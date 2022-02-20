@@ -1,4 +1,4 @@
-namespace blazor_counter.Data;
+namespace blazor_tut.Data;
 
 public class WeatherForecast
 {
